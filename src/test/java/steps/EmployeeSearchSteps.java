@@ -10,14 +10,16 @@ import utils.CommonMethods;
 import utils.ConfigReader;
 import utils.Constants;
 
+import java.sql.Time;
 import java.util.concurrent.TimeUnit;
 
 public class EmployeeSearchSteps extends CommonMethods {
 
     @Given("user is navigated to HRMS application")
     public void user_is_navigated_to_hrms_application() {
-       openBrowserAndLauchApplication();
+        openBrowserAndLauchApplication();
     }
+
     @When("user enters valid admin credentials")
     public void user_enters_valid_admin_credentials() {
         WebElement usernamefield = driver.findElement(By.id("txtUsername"));
@@ -58,5 +60,12 @@ public class EmployeeSearchSteps extends CommonMethods {
     @Then("user is able to see employee information")
     public void user_is_able_to_see_employee_information() {
         System.out.println("Result displayed");
+    }
+
+    @When("user enters valid employee name")
+    public void user_enters_valid_employee_name() {
+        driver.manage().timeouts().implicitlyWait(Constants.IMPLICIT_WAIT, TimeUnit.SECONDS);
+        WebElement searchName = driver.findElement(By.xpath("(//*[@type='text'])[1]"));
+        searchName.sendKeys("Zubair");
     }
 }
