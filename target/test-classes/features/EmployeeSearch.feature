@@ -8,4 +8,3 @@ Feature: US-12345 - Search an employee in HRMS
     And user clicks on search button
     Then user is able to see employee information
 
-  

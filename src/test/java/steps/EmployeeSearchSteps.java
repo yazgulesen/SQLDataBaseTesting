@@ -3,13 +3,14 @@ package steps;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.openqa.selenium.remote.Command;
+import utils.CommonMethods;
 
-public class EmployeeSearchSteps {
+public class EmployeeSearchSteps extends CommonMethods {
 
     @Given("user is navigated to HRMS application")
     public void user_is_navigated_to_hrms_application() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+       openBrowserAndLauchApplication();
     }
     @When("user enters valid admin credentials")
     public void user_enters_valid_admin_credentials() {
