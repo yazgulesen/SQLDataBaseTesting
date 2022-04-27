@@ -68,6 +68,20 @@ In feature file we write scenarios using gherking language
 
 after feature file, we need to create step definitions
 
+----------------------------------------------------------------
+
+Class 4
+
+Recap --
+---------
+Common methods class in our framework is used to write all the methods we will be using
+in majority of scenarios (Code reusability)
+
+sendText method, click etc
+
+in constants class we provide implicit wait, explicit wait values and test data path
+
+
 
 
 
