@@ -38,26 +38,29 @@ public class EmployeeSearchSteps extends CommonMethods {
 
     @When("user navigated to employee list page")
     public void user_navigated_to_employee_list_page() {
-        WebElement pimOption = driver.findElement(By.id("menu_pim_viewPimModule"));
+       // WebElement pimOption = driver.findElement(By.id("menu_pim_viewPimModule"));
        // pimOption.click();
-        click(pimOption);
-        WebElement empListOption = driver.findElement(By.id("menu_pim_viewEmployeeList"));
+       // click(pimOption);
+        click(employeeSearchPage.pimOption);
+     //   WebElement empListOption = driver.findElement(By.id("menu_pim_viewEmployeeList"));
        // empListOption.click();
-        click(empListOption);
+       // click(empListOption);
+        click(employeeSearchPage.empListOption);
     }
 
     @When("user enters valid employee id")
     public void user_enters_valid_employee_id() {
-        WebElement searchId = driver.findElement(By.id("empsearch_id"));
+      //  WebElement searchId = driver.findElement(By.id("empsearch_id"));
       //  searchId.sendKeys("8510142");
-        sendText(searchId, "8510142");
+       // sendText(searchId, "8510142");
+        sendText(employeeSearchPage.idField, "8510142");
     }
 
     @When("user clicks on search button")
     public void user_clicks_on_search_button() {
-        WebElement searchButton = driver.findElement(By.id("searchBtn"));
+       // WebElement searchButton = driver.findElement(By.id("searchBtn"));
       //  searchButton.click();
-        click(searchButton);
+        click(employeeSearchPage.searchButton);
     }
 
     @Then("user is able to see employee information")
@@ -69,8 +72,8 @@ public class EmployeeSearchSteps extends CommonMethods {
     @When("user enters valid employee name")
     public void user_enters_valid_employee_name() {
      //   driver.manage().timeouts().implicitlyWait(Constants.IMPLICIT_WAIT, TimeUnit.SECONDS);
-        WebElement searchName = driver.findElement(By.xpath("(//*[@type='text'])[1]"));
+      //  WebElement searchName = driver.findElement(By.xpath("(//*[@type='text'])[1]"));
       //  searchName.sendKeys("Zubair");
-        sendText(searchName, "zubair");
+        sendText(employeeSearchPage.nameField, "zubair");
     }
 }
