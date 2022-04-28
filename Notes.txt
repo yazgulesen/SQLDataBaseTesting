@@ -81,6 +81,9 @@ sendText method, click etc
 
 in constants class we provide implicit wait, explicit wait values and test data path
 
+page object model is a design pattern
+According to page object model, we create page classes for all the screens available in the application
+
 
 
 

@@ -5,8 +5,9 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import pages.LoginPage;
 import utils.CommonMethods;
-import utils.ConfigReader;
+
 
 public class LoginSteps extends CommonMethods {
 
@@ -18,11 +19,12 @@ public class LoginSteps extends CommonMethods {
 
     @When("user enters valid ess username and password")
     public void user_enters_valid_ess_username_and_password() {
-        WebElement usernamefield = driver.findElement(By.id("txtUsername"));
+      //  LoginPage login = new LoginPage();
+      //  WebElement usernamefield = driver.findElement(By.id("txtUsername"));
 //        usernamefield.sendKeys(ConfigReader.getPropertyValue("username"));
-        sendText(usernamefield, "tts12345");
-        WebElement passwordField = driver.findElement(By.name("txtPassword"));
-        sendText(passwordField, "Hum@nhrm123");
+        sendText(login.usernameBox, "tts12345");
+        //WebElement passwordField = driver.findElement(By.name("txtPassword"));
+        sendText(login.passwordBox, "Hum@nhrm123");
     }
 
     @Then("ess user is successfully logged in")
@@ -33,11 +35,12 @@ public class LoginSteps extends CommonMethods {
 
     @When("user enters invalid username and password")
     public void user_enters_invalid_username_and_password() {
-        WebElement usernamefield = driver.findElement(By.id("txtUsername"));
+      //  LoginPage login = new LoginPage();
+    //    WebElement usernamefield = driver.findElement(By.id("txtUsername"));
 //        usernamefield.sendKeys(ConfigReader.getPropertyValue("username"));
-        sendText(usernamefield, "tts12345");
-        WebElement passwordField = driver.findElement(By.name("txtPassword"));
-        sendText(passwordField, "Hum@nhrm");
+        sendText(login.usernameBox, "tts12345");
+      //  WebElement passwordField = driver.findElement(By.name("txtPassword"));
+        sendText(login.passwordBox, "Hum@nhrm");
     }
 
     @Then("user see error message on the screen")

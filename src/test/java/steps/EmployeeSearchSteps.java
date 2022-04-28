@@ -5,6 +5,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import pages.LoginPage;
 import utils.CommonMethods;
 import utils.ConfigReader;
 
@@ -17,18 +18,20 @@ public class EmployeeSearchSteps extends CommonMethods {
 
     @When("user enters valid admin credentials")
     public void user_enters_valid_admin_credentials() {
-        WebElement usernamefield = driver.findElement(By.id("txtUsername"));
+    //    LoginPage login = new LoginPage();
+     //   WebElement usernamefield = driver.findElement(By.id("txtUsername"));
 //        usernamefield.sendKeys(ConfigReader.getPropertyValue("username"));
-        sendText(usernamefield, ConfigReader.getPropertyValue("username"));
-        WebElement passwordField = driver.findElement(By.name("txtPassword"));
-        sendText(passwordField, ConfigReader.getPropertyValue("password"));
+        sendText(login.usernameBox, ConfigReader.getPropertyValue("username"));
+      //  WebElement passwordField = driver.findElement(By.name("txtPassword"));
+        sendText(login.passwordBox, ConfigReader.getPropertyValue("password"));
        // passwordField.sendKeys(ConfigReader.getPropertyValue("password"));
     }
 
     @When("user clicks on login button")
     public void user_clicks_on_login_button() {
-        WebElement loginButton = driver.findElement(By.id("btnLogin"));
-        click(loginButton);
+     //   LoginPage login = new LoginPage();
+      //  WebElement loginButton = driver.findElement(By.id("btnLogin"));
+        click(login.loginBtn);
        // loginButton.click();
        // driver.manage().timeouts().implicitlyWait(Constants.IMPLICIT_WAIT, TimeUnit.SECONDS);
     }
