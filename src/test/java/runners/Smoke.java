@@ -19,14 +19,8 @@ import org.junit.runner.RunWith;
         //it means the console output for cucumber test is having irrelevant information
         // when we set it to true, it simply removes all the irrelevant information
         monochrome = true,
-        //tags will identify the scenario based on the tag we provide in the feature file
-        //use or if we need to execute scenarios from logical or keyword which will execute either of the
-        //senario having the tag
-        //use and if we need to execute scenarios from logical and keyword which will execute the scenarios
-        //having both the tags in it
-        tags = "@background"
+        tags = "@smoke"
 )
 
-public class RunnerClass {
-
+public class Smoke {
 }
