@@ -116,6 +116,9 @@ Background: we take common steps from scenarios and put them in background
 Hooks: we use hooks to provide pre condition and post condition to all the scenarios
 We always create hooks class in steps package
 
+Background vs hooks:
+background - it is applicable to one feature file
+hooks - it is applicable to all the feature files
 
 
 
