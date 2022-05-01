@@ -17,7 +17,7 @@ Feature: Validation of login scenarios
     And user clicks on login button
     Then ess user is successfully logged in
 
-  @regression @test @smoke
+  @regression  @smoke
   Scenario: Invalid login
    # Given user is navigated to HRMS application
     When user enters invalid username and password
