@@ -121,6 +121,21 @@ background - it is applicable to one feature file
 hooks - it is applicable to all the feature files
 
 
+-----------------------------------------------------------------------------------------------
+Class - 7
+
+-- recap
+--------- hooks - to write pre conditions and post conditions of the project, we use hooks.
+@before and @after - 2 types of hooks we have in cucumber
+we always write hooks under steps package
+
+--
+Data driven testing part -
+-- using examples table and scenario outline
+-- using data table
+--
+
+
 
 
 
