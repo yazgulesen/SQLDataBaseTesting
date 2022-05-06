@@ -19,6 +19,7 @@ public class ExcelReader {
     static Sheet sheet;
 
 
+    //to open the excel file
     public static void openExcel(String filePath){
         try {
             FileInputStream fis = new FileInputStream(filePath);
@@ -30,6 +31,7 @@ public class ExcelReader {
         }
     }
 
+    //open the sheet in excel file
     public static void getSheet(String sheetName){
         sheet = book.getSheet(sheetName);
     }
@@ -54,7 +56,6 @@ public static List<Map<String, String>> excelIntoMap(String filePath, String she
     getSheet(sheetName);
 
     List<Map<String, String>> ListData = new ArrayList<>();
-
     //outer loop
     for (int row=1; row<getRowCount(); row++){
         //creating a map for every row
