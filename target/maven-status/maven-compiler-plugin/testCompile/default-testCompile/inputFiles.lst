@@ -3,6 +3,7 @@ C:\Users\sohai\IdeaProjects\CucumberFrameworkBatch12\src\test\java\utils\CommonM
 C:\Users\sohai\IdeaProjects\CucumberFrameworkBatch12\src\test\java\utils\ConfigReader.java
 C:\Users\sohai\IdeaProjects\CucumberFrameworkBatch12\src\test\java\pages\DashboardPage.java
 C:\Users\sohai\IdeaProjects\CucumberFrameworkBatch12\src\test\java\pages\EmployeeSearchPage.java
+C:\Users\sohai\IdeaProjects\CucumberFrameworkBatch12\src\test\java\runners\FailedRunner.java
 C:\Users\sohai\IdeaProjects\CucumberFrameworkBatch12\src\test\java\steps\LoginSteps.java
 C:\Users\sohai\IdeaProjects\CucumberFrameworkBatch12\src\test\java\steps\PageInitializers.java
 C:\Users\sohai\IdeaProjects\CucumberFrameworkBatch12\src\test\java\runners\RunnerClass.java
