@@ -26,7 +26,7 @@ import org.junit.runner.RunWith;
         //having both the tags in it
         tags = "@sprint12",
         //html report will  be generated under target folder
-        plugin = {"html:target/cucumber.html", "pretty"
+        plugin = {"html:target/cucumber.html", "pretty", "json:target/cucumber.json"
         }
 )
 
