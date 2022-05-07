@@ -133,7 +133,13 @@ we always write hooks under steps package
 Data driven testing part -
 -- using examples table and scenario outline
 -- using data table
---
+-------------------------------------------------------------------------------------------------------
+
+Class 8-9
+------------------------
+maven surefire plugin
+
+
 
 
 
