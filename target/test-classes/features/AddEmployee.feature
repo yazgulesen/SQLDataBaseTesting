@@ -46,7 +46,7 @@ Feature: Adding the employees in HRMS Application
 
      @db
      Scenario: Front and backend testing
-       When user enters "Jimm" "Mr" and "John"
+       When user enters "Jimmy" "Mr" and "John"
        And capture the employee id
        And user clicks on save button
        And  employee added successfully

@@ -22,7 +22,6 @@ public class Hooks extends CommonMethods {
         }else{
             pic = takeScreenshot("passed/" + scenario.getName());
         }
-
         //it will attach the pic in report
         scenario.attach(pic, "image/png", scenario.getName());
         tearDown();

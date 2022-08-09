@@ -8,9 +8,11 @@ import org.bouncycastle.crypto.agreement.kdf.ConcatenationKDFGenerator;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import pages.AddEmployeePage;
 import utils.CommonMethods;
 import utils.Constants;
 import utils.ExcelReader;
+import utils.GlobalVariables;
 
 import java.util.Iterator;
 import java.util.List;
@@ -127,6 +129,14 @@ public class AddEmployeeSteps extends CommonMethods {
             click(employeeSearchPage.addEmployeeOption);
             Thread.sleep(2000);
         }
+    }
+    @When("capture the employee id")
+    public void capture_the_employee_id() {
+        AddEmployeePage add = new AddEmployeePage();
+       GlobalVariables.empId= add.empIDLocator.getAttribute("value");
+       GlobalVariables.firstName = add.firstNameField.getAttribute("value");
+        System.out.println("Emp_Id "+GlobalVariables.empId);
+        System.out.println("FirstName"+GlobalVariables.firstName);
     }
 
 }
